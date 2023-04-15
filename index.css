@@ -156,7 +156,7 @@ form{
     border: none;
     outline: 0;
     text-align: center;
-    height: 40px;
+    height: 2.5em;
 }
 
 legend {
@@ -187,7 +187,16 @@ label {
     border: 1px solid white;
 }
 
-
+#valor{
+    width: 23%;
+    height: 1em;
+    margin: 1em auto;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    border: 1px solid;
+    background-color: white;
+    font-family: tahoma;
+}
 
 fieldset {
     border: none;
