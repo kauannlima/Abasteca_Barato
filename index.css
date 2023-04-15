@@ -1,0 +1,221 @@
+body {
+    font-family: tahoma, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#principal {
+    /*Centralizar toda pagina*/
+    width: 1024px;
+    margin: 40px auto;
+}
+
+
+#cabeça {
+    margin-top: 0px;
+    background-color: rgb(8, 8, 255);
+    background-image: url(Imagens/backgound_blue.jpg);
+    margin-bottom: 40px;
+    background-size: cover;
+}
+
+
+#titulo {
+    height: 10px;
+    font-family: tahoma;
+    padding: 150px 50px 150px 50px;
+
+}
+
+#titulo h1 {
+    font-family: tahoma;
+    font-weight: normal;
+    font-size: 50px;
+    text-align: center;
+    font-weight: normal;
+    margin-left: 0;
+    color: white;
+    margin-top: 0;
+}
+
+#titulo h2 {
+    font-size: 20px;
+    font-family: tahoma;
+    font-weight: normal;
+    text-align: center;
+    font-weight: normal;
+    color: white;
+    margin-top: 0;
+}
+
+.contato ul {
+    padding: 0;
+    font-family: tahoma;
+    text-align: right;
+    margin: 0 0px 0 0;
+}
+
+.contato li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px 0 0;
+    padding: 0px 0px 0px 0px;
+}
+
+.contato a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 0px;
+    transition: all 0.3s;
+}
+
+
+.contato p {
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+
+a:hover {
+    color: white;
+    font-size: 30px;
+}
+
+#sobre {
+    color: rgb(254, 254, 254);
+    text-align: center;
+    margin:40px 0px;
+    padding: 50px 50px 10px;
+    background-color: rgb(17, 173, 17);
+    background-image: url(Imagens/backgound_green.jpg);
+    background-size: cover;
+}
+
+#sobre h1 {
+    font-size: 50px;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+#sobre p {
+    font-size: 20px;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+
+#referencia{
+margin-bottom: 0px;
+}
+
+#referencia1{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 0px;
+    transition: all 0.3s;
+margin-bottom: 30px;
+}
+
+
+#referencia1:hover{
+text-decoration: underline;}
+
+article{
+    background-color: orange;
+    font-family: sans-serif;
+    color: rgb(254, 254, 254);
+    text-align: center;
+    margin-top: 40px;
+    padding: 100px 0px;
+    background-image: url(Imagens/backgound_orange.jpg);
+    background-size: cover;
+    font-size: 20px;
+}
+
+.article{
+    padding: 10px 0;
+}
+
+form{
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+#gasolina, #etanol, .calcular {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    border: none;
+    outline: 0;
+    text-align: center;
+    height: 40px;
+}
+
+legend {
+    padding: 10px;
+    margin-bottom: 25px;
+    font-size: 40px;
+}
+
+label {
+    margin-top: 15px;
+}
+
+
+.calcular {
+    width: 20%;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    background-size: cover;
+    background-color: white;
+    font-family: tahoma;
+    transition: all .5s ease-in-out;
+    margin-bottom: 50px;
+}
+
+.calcular:hover{
+    background-image:url(Imagens/backgound_green.jpg);
+    color: white;
+    border: 1px solid white;
+}
+
+
+
+fieldset {
+    border: none;
+    width: 100%;
+    padding: 0px;
+}
+
+.sla {
+    align-items: center;
+    width: 20%;
+    height: 50px;
+    background-color: white;
+    margin: 1px auto;
+    margin-bottom: 25px;
+    color: black;
+}
+
+footer{
+    margin-top: 40px;
+    background-color: rgb(8, 8, 255);
+    background-image: url(Imagens/backgound_blue.jpg);
+    margin-bottom: 40px;
+    padding: 30px;
+    background-size: cover;
+    font-family: tahoma;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    font-weight: normal;
+    color: white;
+}

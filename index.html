@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abasteça Barato</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../../../Conteudos Plus/fontawesome-free-6.3.0-web/css/all.min.css">
+</head>
+
+<body>
+
+
+    <div id="principal">
+        <header id="cabeça">
+
+            <div id="titulo">
+                <h1>Abasteça Barato</h1>
+                <h2>Economize no proximo abastecimento!</h2>
+
+            </div>
+            <div class="contato-header">
+                <div class="contato">
+                    <ul>
+                        <li>
+                            <p>Contato</p>
+                        </li>
+                        <li><a href="https://wa.me/5513988377936" target="_blank"><i
+                                    class="fa-brands fa-whatsapp"></i></a>
+                        </li>
+                        <li><a href="https://github.com/kauannlima" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/kauan-de-almeida-lima-80a2b2206/" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </header>
+
+        <img src="Imagens/original-cdfc69162edccef3c40b3b70243031ff.jpeg" width="100%" height="100%" alt="Abastacendo">
+
+        <nav id="sobre">
+            <h1>Sobre o Sistema</h1>
+            <p>Nosso sistema foi projetado para simplificar e garantir que você economize dinheiro na hora de abastecer
+                seu veículo. Basta informar os preços da gasolina e do etanol, e nossa tecnologia realizará uma precisa
+                comparação para determinar qual é o combustível mais vantajoso para o seu bolso.</p>
+
+            <div id="referencia">
+                <p><a id="referencia1"
+                        href="https://www1.folha.uol.com.br/mercado/2022/07/gasolina-ou-alcool-como-calcular-o-que-compensa-mais-na-hora-de-abastecer.shtml"
+                        target="_blank">Como esse calculo é feito?</a></p>
+            </div>
+        </nav>
+
+        <article class="article">
+            <form action="">
+                <fieldset>
+                    <legend>Calculo dos Custos</legend>
+
+
+                    <label for="Gasolina">Digite o preço da Gasolina</label>
+                    <div class="sla">
+                        <input type="number" id="gasolina" name="user" min="0.1" placeholder="R$ por Litro">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <label for="Etanol">Digite o preço do Etanol</label>
+                    <div class="sla">
+                        <input type="number" id="etanol" name="user" min="0.1" placeholder="R$ por Litro">
+                    </div>
+
+                </fieldset>
+
+                <button type="button" class="calcular" onclick="calcular()">Calcular</button>
+                <fieldset>
+
+
+                    <label>O combustível mais vantajoso é: </label>
+
+                </fieldset>
+
+                <div id="valor"></div>
+            </form>
+
+        </article>
+
+        <footer>Feito e desenvolvido por Kauan Lima</footer>
+    </div>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
