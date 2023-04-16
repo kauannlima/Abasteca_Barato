@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abasteça Barato</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -60,17 +60,13 @@
 
 
                     <label for="Gasolina">Digite o preço da Gasolina</label>
-                    <div class="sla">
-                        <input type="number" id="gasolina" name="user" min="0.1" placeholder="R$ por Litro">
-                    </div>
+                        <input type="number" id="gasolina" name="gas" min="0.1" placeholder="R$ por Litro">
+
                 </fieldset>
 
                 <fieldset>
                     <label for="Etanol">Digite o preço do Etanol</label>
-                    <div class="sla">
-                        <input type="number" id="etanol" name="user" min="0.1" placeholder="R$ por Litro">
-                    </div>
-
+                        <input type="number" id="etanol" name="eta" min="0.1" placeholder="R$ por Litro">
                 </fieldset>
 
                 <button type="button" class="calcular" onclick="calcular()">Calcular</button>
