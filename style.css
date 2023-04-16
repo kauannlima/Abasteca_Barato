@@ -239,16 +239,16 @@ footer{
         font-size: 1em;
     }
     #titulo h1{
-        font-size: 1.9em;
+        font-size: 1.7em;
     }
 
     #titulo h2{
-        font-size: 1.3em;
+        font-size: 1.0em;
         margin-bottom: 0;
     }
 
     #sobre h1 {
-        font-size: 1.9em;
+        font-size: 1.7em;
     }
 
 
@@ -257,7 +257,7 @@ footer{
     }
 
     .contato ul{
-        font-size: .8em;
+        font-size: .6em;
         text-align: center;
         margin-top: 0;
     }
