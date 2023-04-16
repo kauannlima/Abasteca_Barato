@@ -51,14 +51,13 @@ input[type="number"]::-webkit-inner-spin-button {
     text-align: center;
     font-weight: normal;
     color: white;
-    margin-top: 0;
 }
 
 .contato ul {
     padding: 0;
     font-family: tahoma;
     text-align: right;
-    margin: 0;
+    margin: 1.9em 0 0;
 }
 
 .contato li {
@@ -233,17 +232,33 @@ footer{
 
 @media screen and (max-width: 40em){
 
+
+
     a:hover {
         color: white;
         font-size: 1em;
     }
+    #titulo h1{
+        font-size: 1.9em;
+    }
+
+    #titulo h2{
+        font-size: 1.3em;
+        margin-bottom: 0;
+    }
+
+    #sobre h1 {
+        font-size: 1.9em;
+    }
+
 
     #cabeça {
         height: 20em;
     }
 
     .contato ul{
+        font-size: .8em;
         text-align: center;
-        margin-right: 0;
+        margin-top: 0;
     }
 }
