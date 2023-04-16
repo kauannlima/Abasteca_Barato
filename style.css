@@ -1,0 +1,249 @@
+body {
+    font-family: tahoma, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#principal {
+    /*Centralizar toda pagina*/
+    width: 95%;
+    margin: 2.5em auto;
+}
+
+
+#cabeça {
+    margin-top: 0;
+    background-color: rgb(8, 8, 255);
+    background-image: url(Imagens/backgound_blue.jpg);
+    margin-bottom: 2.5em;
+    background-size: cover;
+}
+
+
+#titulo {
+    height: 0.625em;
+    font-family: tahoma;
+    padding: 7em 1.5em ;
+
+}
+
+#titulo h1 {
+    font-family: tahoma;
+    font-weight: normal;
+    font-size: 3.125em ;
+    text-align: center;
+    font-weight: normal;
+    margin-left: 0;
+    color: white;
+    margin-top: 0;
+}
+
+#titulo h2 {
+    font-size: 1.25em;
+    font-family: tahoma;
+    font-weight: normal;
+    text-align: center;
+    font-weight: normal;
+    color: white;
+    margin-top: 0;
+}
+
+.contato ul {
+    padding: 0;
+    font-family: tahoma;
+    text-align: right;
+    margin: 0;
+}
+
+.contato li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 1.25em 0 0;
+    padding: 0;
+}
+
+.contato a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.25em;
+    letter-spacing: 0;
+    transition: all 0.3s;
+}
+
+
+.contato p {
+    color: #ffffff;
+    font-size: 1.25em;
+    letter-spacing: 0.0625em ;
+}
+
+
+a:hover {
+    color: white;
+    font-size: 1.875em;
+}
+
+#sobre {
+    color: rgb(254, 254, 254);
+    text-align: center;
+    margin:2.5em 0;
+    padding: 3.125em  3.125em  0.5em;
+    background-color: rgb(17, 173, 17);
+    background-image: url(Imagens/backgound_green.jpg);
+    background-size: cover;
+}
+
+#sobre h1 {
+    font-size: 3.125em ;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom:  1em;
+}
+
+#sobre p {
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 1.25em;
+}
+
+
+#referencia{
+margin-bottom: 0;
+}
+
+#referencia1{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.25em;
+    letter-spacing: 0;
+    transition: all 0.3s;
+margin-bottom:  1.875em;
+}
+
+
+#referencia1:hover{
+text-decoration: underline;}
+
+.article{
+    background-color: orange;
+    font-family: sans-serif;
+    color: rgb(254, 254, 254);
+    text-align: center;
+    margin: 2.25em auto;
+    padding: 0.625em 0;
+    background-image: url(Imagens/backgound_orange.jpg);
+    background-size: cover;
+    font-size: 1.25em;
+    width: 100%;
+    margin: 0.625em auto;
+    padding: 0.625em;
+    box-sizing: border-box;
+
+}
+
+
+form{
+    width: 100%;
+    margin: 0.625em auto;
+    padding: 0.625em;
+    box-sizing: border-box;
+}
+
+
+#gasolina, #etanol{
+    background-color: white;
+    width: 8em;
+    padding: 0.625em;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    font-size: 1.25em;
+    border: none;
+    outline: 0;
+    text-align: center;
+    margin: 0px auto;    
+    border: 1px solid black;
+}
+
+#valor, .calcular{
+    background-color: white;
+    width: 8em;
+    padding: 0.625em;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    font-size: 1.25em;
+    border: none;
+    outline: 0;
+    text-align: center;
+    margin: 1em auto 0;   
+    border: 1px solid black;
+}
+
+.calcular:hover{
+    background-image:url(Imagens/backgound_green.jpg);
+    background-size: cover;
+    color: white;
+    border: 0.0625em  solid white;
+}
+
+legend {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+label {
+    display: block;
+    margin-top: 0.9375em;
+}
+
+
+
+
+
+
+fieldset {
+    border: none;
+    width: 100%;
+    padding: 0;
+}
+
+
+
+footer{
+    margin-top: 2.5em;
+    background-color: rgb(8, 8, 255);
+    background-image: url(Imagens/backgound_blue.jpg);
+    margin-bottom: 2.5em;
+    padding: 1.875em;
+    background-size: cover;
+    font-family: tahoma;
+    font-weight: normal;
+    font-size: 1.25em;
+    text-align: center;
+    font-weight: normal;
+    color: white;
+}
+
+@media screen and (max-width: 40em){
+
+    a:hover {
+        color: white;
+        font-size: 1em;
+    }
+
+    #cabeça {
+        height: 20em;
+    }
+
+    .contato ul{
+        text-align: center;
+        margin-right: 0;
+    }
+}
