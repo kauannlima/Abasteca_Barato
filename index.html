@@ -28,51 +28,35 @@
     </ul>
   </header>
 
-  <section class="section-main">
-    <h2>Sobre o Sistema</h2>
-    <p>
-      Nosso sistema foi projetado para simplificar e garantir que você
-      economize dinheiro na hora de abastecer seu veículo. Basta informar os
-      preços da gasolina e do etanol, e nossa tecnologia realizará uma precisa
-      comparação para determinar qual é o combustível mais vantajoso para o
-      seu bolso.
-    </p>
-
-    <p id="link">
-      <a id="referencia1"
-        href="https://www1.folha.uol.com.br/mercado/2022/07/gasolina-ou-alcool-como-calcular-o-que-compensa-mais-na-hora-de-abastecer.shtml"
-        target="_blank">Como esse calculo é feito?</a>
-    </p>
-  </section>
-
   <section class="section-main calc">
     <h2>Calculo dos Custos</h2>
-
-    <div id="row">
     <article class="valor">
       <p>Digite o preço da Gasolina</p>
-      <input class="inputs" type="number" id="gasolina" name="gas" min="0.1" placeholder="R$ por Litro" />
+      <input class="inputs" type="number" id="gasolina"  placeholder="R$ por Litro" />
     </article>
-
     <article class="valor">
       <p>Digite o preço do Etanol</p>
-      <input class="inputs" type="number" id="etanol" name="eta" min="0.1" placeholder="R$ por Litro" />
+      <input class="inputs" type="number" id="etanol"  placeholder="R$ por Litro" />
     </article>
 
-      <button type="button" class="button"id="calcular">
+      <button type="button" id="calcular">
         Calcular
       </button>
-      <button type="button" class="button"id="limpar">
+      <button type="button" id="limpar">
         Limpar
       </button>
       
-    </div>
       <p>O combustível mais vantajoso é:</p>
       <input class="inputs" id="valor" readonly disabled />
+
+      <p id="alert">
+      Como esse calculo é feito?
+      </p>
     </section>
   </div>
 
-    <script src="script.js" src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

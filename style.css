@@ -28,6 +28,7 @@ input::placeholder{
 
 #header {
   background-color: #0a4d68;
+  margin-top: 1em;
 }
 
 #header ul {
@@ -50,23 +51,18 @@ input::placeholder{
   color: #ffffff;
   text-decoration: none;
   font-size: 1.5em;
+  overflow: hidden;
 }
 .section-main {
   background-color: #088395;
   text-align: center;
-  margin-bottom: 1em;
 }
-.section-main p{
-    padding: 0 1.5em;
+.section-main p, .section-main #alert{
+    padding: 1em;
 }
 
-.section-main a{
-    color: #ffffff;
-    text-decoration: none;
-}
-.section-main #link{
-    padding:  .75em 0;
-}
+
+
 .valor{
   box-sizing: border-box;
   margin: 1em auto;
@@ -74,7 +70,7 @@ input::placeholder{
   margin: 0 auto 1em;
   text-align: center;
 }
-.button{
+button{
 background-color: #0a4d68;
 color: white;
 border: #0a4d68 1px solid;
@@ -85,19 +81,22 @@ display: block;
 cursor:pointer;
 transition: all .5s linear;
 }
-.button:hover{
+button:hover{
   background-color: #1a6c78;
 }
 .inputs{
   background-color: white;
   border: 1px solid black;
-  margin-bottom: 1em;
+  margin-bottom: 1.3em;
   padding: .5em;
   text-align: center;
 }
+#alert{
+  cursor:pointer;
+}
 
 @media screen and (min-width: 40.625em){
-  .button{
+  button{
     float: left;
     width: 15%;
     margin: 0 17.5% ;
@@ -108,7 +107,4 @@ width: 35%;
 margin: 0 7.5% ;
     }
 
-    #row{
-      overflow: hidden;
-    }
 }

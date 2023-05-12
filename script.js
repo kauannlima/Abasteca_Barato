@@ -26,18 +26,19 @@ function calcular() {
       text: "Tente novamente",
       icon: "error",
     });
-    document.getElementById("etanol").value = "";
   }
 
-  const mediaPreco = inputEtanol / inputGasolina;
+  else {
 
-  if (mediaPreco <= 0.7) {
-    msgResultado.value = "Etanol é mais vantajoso!";
-  } else {
-    msgResultado.value = "Gasolina é mais vantajoso!";
+    const mediaPreco = inputEtanol / inputGasolina;
+
+    if (mediaPreco <= 0.7) {
+      msgResultado.value = "Etanol é mais vantajoso!";
+    } else {
+      msgResultado.value = "Gasolina é mais vantajoso!";
+    }
   }
 }
-
 function limpar() {
   document.getElementById("valor").value = "";
   document.getElementById("gasolina").value = "";
@@ -52,4 +53,10 @@ clearAll.addEventListener("click", () => {
 const calc = document.getElementById("calcular");
 calc.addEventListener("click", () => {
   calcular();
+});
+
+const alertt = document.getElementById("alert");
+alertt.addEventListener("click", () => {
+
+  swal("Como esse calculo é feito?", "Para saber se compensa trocar a Gasolina pelo Etanol, é necessário fazer um cálculo que leva em consideração o rendimento de cada combustível.  O consumidor deve dividir o valor do litro de Etanol pelo valor do litro da Gasolina. Se der até 0,70, o álcool compensa mais.");
 });
