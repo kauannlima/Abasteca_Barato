@@ -1,264 +1,114 @@
-body {
-    font-family: tahoma, Arial, sans-serif;
-    padding: 0;
-    margin: 0;
+body{
+  font-family: "Barlow Condensed", sans-serif;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: white;
 }
-
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
+}
+h1{
+  padding: 2em 0 0;
+  margin: 0;
+}
+h2 {
+font-weight: normal;
+padding: .75em 0 ;
+}
+input::placeholder{
+  text-align: center;
+}
+#center{
+  width: 95%;
+  margin:  auto;
 }
 
-#principal {
-    /*Centralizar toda pagina*/
-    width: 95%;
-    margin: 2.5em auto;
+#header {
+  background-color: #0a4d68;
 }
 
-
-#cabeça {
-    margin-top: 0;
-    background-color: rgb(8, 8, 255);
-    background-image: url(Imagens/backgound_blue.jpg);
-    margin-bottom: 2.5em;
-    background-size: cover;
+#header ul {
+  margin: 0 0 1em;
+  padding: 0;
+  list-style: none;
+  font-size: 0.7em;
+}
+#header li {
+  list-style: none;
+  width: 100%;
+  margin: auto;
+  padding: 1em 0;
+}
+#header li:hover {
+  background-color: #088395;
 }
 
-
-#titulo {
-    height: 0.625em;
-    font-family: tahoma;
-    padding: 7em 1.5em ;
-
+#header a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+.section-main {
+  background-color: #088395;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.section-main p{
+    padding: 0 1.5em;
 }
 
-#titulo h1 {
-    font-family: tahoma;
-    font-weight: normal;
-    font-size: 3.125em ;
-    text-align: center;
-    font-weight: normal;
-    margin-left: 0;
-    color: white;
-    margin-top: 0;
-}
-
-#titulo h2 {
-    font-size: 1.25em;
-    font-family: tahoma;
-    font-weight: normal;
-    text-align: center;
-    font-weight: normal;
-    color: white;
-}
-
-.contato ul {
-    padding: 0;
-    font-family: tahoma;
-    text-align: right;
-    margin: 1.9em 0 0;
-}
-
-.contato li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 1.25em 0 0;
-    padding: 0;
-}
-
-.contato a {
+.section-main a{
     color: #ffffff;
     text-decoration: none;
-    font-size: 1.25em;
-    letter-spacing: 0;
-    transition: all 0.3s;
+}
+.section-main #link{
+    padding:  .75em 0;
+}
+.valor{
+  box-sizing: border-box;
+  margin: 1em auto;
+  width: 15em;
+  margin: 0 auto 1em;
+  text-align: center;
+}
+.button{
+background-color: #0a4d68;
+color: white;
+border: #0a4d68 1px solid;
+width: 11em;
+margin: 0 auto 1em;
+padding: .5em;
+display: block;
+cursor:pointer;
+transition: all .5s linear;
+}
+.button:hover{
+  background-color: #1a6c78;
+}
+.inputs{
+  background-color: white;
+  border: 1px solid black;
+  margin-bottom: 1em;
+  padding: .5em;
+  text-align: center;
 }
 
-
-.contato p {
-    color: #ffffff;
-    font-size: 1.25em;
-    letter-spacing: 0.0625em ;
-}
-
-
-a:hover {
-    color: white;
-    font-size: 1.875em;
-}
-
-#sobre {
-    color: rgb(254, 254, 254);
-    text-align: center;
-    margin:2.5em 0;
-    padding: 3.125em  3.125em  0.5em;
-    background-color: rgb(17, 173, 17);
-    background-image: url(Imagens/backgound_green.jpg);
-    background-size: cover;
-}
-
-#sobre h1 {
-    font-size: 3.125em ;
-    text-align: center;
-    font-weight: normal;
-    margin-bottom:  1em;
-}
-
-#sobre p {
-    font-size: 1.2em;
-    text-align: center;
-    font-weight: normal;
-    margin-bottom: 1.25em;
-}
-
-
-#referencia{
-margin-bottom: 0;
-}
-
-#referencia1{
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.25em;
-    letter-spacing: 0;
-    transition: all 0.3s;
-margin-bottom:  1.875em;
-}
-
-
-#referencia1:hover{
-text-decoration: underline;}
-
-.article{
-    background-color: orange;
-    font-family: sans-serif;
-    color: rgb(254, 254, 254);
-    text-align: center;
-    margin: 2.25em auto;
-    padding: 0.625em 0;
-    background-image: url(Imagens/backgound_orange.jpg);
-    background-size: cover;
-    font-size: 1.25em;
-    width: 100%;
-    margin: 0.625em auto;
-    padding: 0.625em;
-    box-sizing: border-box;
-
-}
-
-
-form{
-    width: 100%;
-    margin: 0.625em auto;
-    padding: 0.625em;
-    box-sizing: border-box;
-}
-
-
-#gasolina, #etanol{
-    background-color: white;
-    width: 8em;
-    padding: 0.625em;
-    color: rgb(0, 0, 0);
-    box-sizing: border-box;
-    font-size: 1.25em;
-    border: none;
-    outline: 0;
-    text-align: center;
-    margin: 0px auto;    
-    border: 1px solid black;
-}
-
-#valor, .calcular{
-    background-color: white;
-    width: 8em;
-    padding: 0.625em;
-    color: rgb(0, 0, 0);
-    box-sizing: border-box;
-    font-size: 1.25em;
-    border: none;
-    outline: 0;
-    text-align: center;
-    margin: 1em auto 0;   
-    border: 1px solid black;
-}
-
-.calcular:hover{
-    background-image:url(Imagens/backgound_green.jpg);
-    background-size: cover;
-    color: white;
-    border: 0.0625em  solid white;
-}
-
-legend {
-    padding: 0.5em;
-    margin-bottom: 1em;
-    font-size: 1.5em;
-}
-
-label {
-    display: block;
-    margin-top: 0.9375em;
-}
-
-
-
-
-
-
-fieldset {
-    border: none;
-    width: 100%;
-    padding: 0;
-}
-
-
-
-footer{
-    margin-top: 2.5em;
-    background-color: rgb(8, 8, 255);
-    background-image: url(Imagens/backgound_blue.jpg);
-    margin-bottom: 2.5em;
-    padding: 1.875em;
-    background-size: cover;
-    font-family: tahoma;
-    font-weight: normal;
-    font-size: 1.25em;
-    text-align: center;
-    font-weight: normal;
-    color: white;
-}
-
-@media screen and (max-width: 40em){
-
-
-
-    a:hover {
-        color: white;
-        font-size: 1em;
+@media screen and (min-width: 40.625em){
+  .button{
+    float: left;
+    width: 15%;
+    margin: 0 17.5% ;
     }
-    #titulo h1{
-        font-size: 1.7em;
+    .valor{
+float: left;
+width: 35%;
+margin: 0 7.5% ;
     }
 
-    #titulo h2{
-        font-size: 1.0em;
-        margin-bottom: 0;
-    }
-
-    #sobre h1 {
-        font-size: 1.7em;
-    }
-
-
-    #cabeça {
-        height: 20em;
-    }
-
-    .contato ul{
-        font-size: .5em;
-        text-align: center;
-        margin: 0 auto;
+    #row{
+      overflow: hidden;
     }
 }

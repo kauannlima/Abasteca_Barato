@@ -2,92 +2,77 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abasteça Barato</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abasteça Barato</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>
+  <div id="center">
+  <header id="header">
+    <h1>Abasteça Barato</h1>
+    <h2>Economize no proximo abastecimento!</h2>
 
+    <ul>
+      <li>
+        <a href="https://github.com/kauannlima" target="_blank">GitHub</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/kauan-de-almeida-lima-80a2b2206/" target="_blank">Linkedin</a>
+      </li>
+    </ul>
+  </header>
 
-    <div id="principal">
-        <header id="cabeça">
+  <section class="section-main">
+    <h2>Sobre o Sistema</h2>
+    <p>
+      Nosso sistema foi projetado para simplificar e garantir que você
+      economize dinheiro na hora de abastecer seu veículo. Basta informar os
+      preços da gasolina e do etanol, e nossa tecnologia realizará uma precisa
+      comparação para determinar qual é o combustível mais vantajoso para o
+      seu bolso.
+    </p>
 
-            <div id="titulo">
-                <h1>Abasteça Barato</h1>
-                <h2>Economize no proximo abastecimento!</h2>
+    <p id="link">
+      <a id="referencia1"
+        href="https://www1.folha.uol.com.br/mercado/2022/07/gasolina-ou-alcool-como-calcular-o-que-compensa-mais-na-hora-de-abastecer.shtml"
+        target="_blank">Como esse calculo é feito?</a>
+    </p>
+  </section>
 
-            </div>
-            <div class="contato-header">
-                <div class="contato">
-                    <ul>
-                        <li>
-                            <p>Contato</p>
-                        </li>
-                        <li><a href="https://wa.me/5513988377936" target="_blank">Whatsapp</a>
-                        </li>
-                        <li><a href="https://github.com/kauannlima" target="_blank">GitHub</a>
-                        </li>
-                        <li><a href="https://www.linkedin.com/in/kauan-de-almeida-lima-80a2b2206/" target="_blank">Linkedin</a></li>
-                    </ul>
-                </div>
-            </div>
+  <section class="section-main calc">
+    <h2>Calculo dos Custos</h2>
 
-        </header>
+    <div id="row">
+    <article class="valor">
+      <p>Digite o preço da Gasolina</p>
+      <input class="inputs" type="number" id="gasolina" name="gas" min="0.1" placeholder="R$ por Litro" />
+    </article>
 
-        <img src="Imagens/original-cdfc69162edccef3c40b3b70243031ff.jpeg" width="100%" height="100%" alt="Abastacendo">
+    <article class="valor">
+      <p>Digite o preço do Etanol</p>
+      <input class="inputs" type="number" id="etanol" name="eta" min="0.1" placeholder="R$ por Litro" />
+    </article>
 
-        <nav id="sobre">
-            <h1>Sobre o Sistema</h1>
-            <p>Nosso sistema foi projetado para simplificar e garantir que você economize dinheiro na hora de abastecer
-                seu veículo. Basta informar os preços da gasolina e do etanol, e nossa tecnologia realizará uma precisa
-                comparação para determinar qual é o combustível mais vantajoso para o seu bolso.</p>
-
-            <div id="referencia">
-                <p><a id="referencia1"
-                        href="https://www1.folha.uol.com.br/mercado/2022/07/gasolina-ou-alcool-como-calcular-o-que-compensa-mais-na-hora-de-abastecer.shtml"
-                        target="_blank">Como esse calculo é feito?</a></p>
-            </div>
-        </nav>
-
-        <article class="article">
-            <form action="">
-                <fieldset>
-                    <legend>Calculo dos Custos</legend>
-
-
-                    <label for="Gasolina">Digite o preço da Gasolina</label>
-                        <input type="number" id="gasolina" name="gas" min="0.1" placeholder="R$ por Litro">
-
-                </fieldset>
-
-                <fieldset>
-                    <label for="Etanol">Digite o preço do Etanol</label>
-                        <input type="number" id="etanol" name="eta" min="0.1" placeholder="R$ por Litro">
-                </fieldset>
-
-                <button type="button" class="calcular" onclick="calcular()">Calcular</button>
-                <fieldset>
-
-
-                    <label>O combustível mais vantajoso é: </label>
-
-                </fieldset>
-
-                <div id="valor"></div>
-            </form>
-
-        </article>
-
-        <footer>Feito e desenvolvido por Kauan Lima</footer>
+      <button type="button" class="button"id="calcular">
+        Calcular
+      </button>
+      <button type="button" class="button"id="limpar">
+        Limpar
+      </button>
+      
     </div>
-    </div>
+      <p>O combustível mais vantajoso é:</p>
+      <input class="inputs" id="valor" readonly disabled />
+    </section>
+  </div>
 
-    <script src="script.js">
-    </script>
+    <script src="script.js" src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 
 </html>
